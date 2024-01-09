@@ -73,7 +73,7 @@ button:hover {
 /* Heading */
 
 h3,
-label[for='new-task'] {
+.main__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -101,7 +101,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for='new-task'] {
+.main__title {
   display: block;
   margin: 0 0 20px;
 }
@@ -111,7 +111,7 @@ label[for='new-task'] {
 }
 
 /* Task list */
-li {
+.todo__task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -120,22 +120,22 @@ li {
   align-items: center;
 }
 
-li > * {
+.todo__task > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.todo__task > .todo__mark {
   margin: 0 10px;
 }
 
-li > label {
+.todo__task > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li >input[type="text"] {
+.todo__task > input[type="text"] {
   width: 226px;
 }
 
@@ -150,7 +150,7 @@ li >input[type="text"] {
 }
 
 /* Completed */
-#completed-tasks .task {
+#completed-tasks .todo-lable-title {
   text-decoration: line-through;
   color: #888;
 }
