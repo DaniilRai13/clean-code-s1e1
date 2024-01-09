@@ -149,7 +149,7 @@ li >input[type="text"] {
 }
 
 /* Completed */
-#completed-tasks .todo-complited__task-title {
+#completed-tasks .task {
   text-decoration: line-through;
   color: #888;
 }
